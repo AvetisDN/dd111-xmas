@@ -34,3 +34,32 @@ const handleScroll = () => {
 window.addEventListener("scroll", handleScroll);
 window.addEventListener("load", handleScroll);
 window.addEventListener("resize", handleScroll);
+
+$(document).ready(function () {
+  $(".gits_carousel").owlCarousel({
+    loop: true,
+    center: true,
+    dots: true,
+    responsive: {
+      0: {
+        items: 1,
+        margin: 24,
+        stagePadding: 64,
+      },
+      540: {
+        items: 2,
+        center: false,
+        margin: 32,
+        stagePadding: 24,
+      },
+      810: {
+        items: 3,
+        center: false,
+        margin: 64,
+        stagePadding: 24,
+      },
+    },
+  });
+});
+
+AOS.init();

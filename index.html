@@ -18,6 +18,12 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="owlcarousel/assets/owl.theme.default.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -46,31 +52,178 @@
       </div>
     </div>
     <!-- CONTENT -->
-    <div class="container">
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-        dignissimos delectus illo possimus atque, voluptate doloremque obcaecati
-        quasi culpa perspiciatis, neque eligendi iusto maiores ex nostrum
-        voluptas placeat assumenda architecto.
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-        dignissimos delectus illo possimus atque, voluptate doloremque obcaecati
-        quasi culpa perspiciatis, neque eligendi iusto maiores ex nostrum
-        voluptas placeat assumenda architecto.
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-        dignissimos delectus illo possimus atque, voluptate doloremque obcaecati
-        quasi culpa perspiciatis, neque eligendi iusto maiores ex nostrum
-        voluptas placeat assumenda architecto.
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-        dignissimos delectus illo possimus atque, voluptate doloremque obcaecati
-        quasi culpa perspiciatis, neque eligendi iusto maiores ex nostrum
-        voluptas placeat assumenda architecto.
-      </p>
+    <!-- HERO SECTION -->
+    <div class="container hero">
+      <img
+        src="./images/hero.png"
+        alt="xmas"
+        class="hero_image"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      />
+      <div class="hero_text">
+        <h1 class="biggest-font" data-aos="fade-left" data-aos-delay="500">
+          Merry Christmas and Happy New Year!
+        </h1>
+        <p class="text-sm" data-aos="fade-left" data-aos-delay="700">
+          Christmas and a new year is about to begin, all good wishes and
+          successes.
+        </p>
+        <button class="btn" data-aos="fade-left" data-aos-delay="900">
+          Get Started
+        </button>
+      </div>
+    </div>
+    <!-- GIVING SECTION -->
+    <div class="container giving">
+      <h2 data-aos="fade-up">Start Giving This Christmas</h2>
+      <div class="giving_features">
+        <div
+          class="giving_features--item"
+          data-aos="fade-down"
+          data-aos-delay="200"
+        >
+          <img src="./images/giving1.png" alt="giving 1" />
+          <h3>Surprise gifts</h3>
+          <p class="text-sm">They are the best gifts there is</p>
+        </div>
+        <div
+          class="giving_features--item"
+          data-aos="fade-down"
+          data-aos-delay="400"
+        >
+          <img src="./images/giving2.png" alt="giving 2" />
+          <h3>Ornaments</h3>
+          <p class="text-sm">Give a moment to decorate</p>
+        </div>
+        <div
+          class="giving_features--item"
+          data-aos="fade-down"
+          data-aos-delay="600"
+        >
+          <img src="./images/giving3.png" alt="giving 3" />
+          <h3>Lots of love</h3>
+          <p class="text-sm">Give away feelings that last forever</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CELEBRATE -->
+    <div class="container celebrate">
+      <div class="celebrate_text">
+        <h2>Celebrate With A Lot Of Love</h2>
+        <p class="text-sm">
+          In this holidays, celebrate with much love and peace, offering many
+          blessings to our loved ones, friends and neighbors, wishing them a
+          good Christmas message.
+        </p>
+        <button class="btn">Send Good Wishes</button>
+      </div>
+      <img src="./images/celebrate.png" alt="xmas" class="celebrate_image" />
+    </div>
+    <!-- SHARE A GIFT -->
+    <div class="container share">
+      <h2>Share A Gift</h2>
+      <div class="share_grid">
+        <div class="share_grid--item">
+          <button>
+            <i class="bx bx-heart"></i>
+          </button>
+          <img src="./images/share/gift1.png" alt="Gingerbread" />
+          <h3>$15</h3>
+          <p class="text-sm">Gingerbread</p>
+        </div>
+        <div class="share_grid--item">
+          <button>
+            <i class="bx bx-heart"></i>
+          </button>
+          <img src="./images/share/gift2.png" alt="Santa's Hat" />
+          <h3>$22</h3>
+          <p class="text-sm">Santa's Hat</p>
+        </div>
+        <div class="share_grid--item">
+          <button>
+            <i class="bx bx-heart"></i>
+          </button>
+          <img src="./images/share/gift3.png" alt="Candy Stick" />
+          <h3>$12</h3>
+          <p class="text-sm">Candy Stick</p>
+        </div>
+        <div class="share_grid--item">
+          <button>
+            <i class="bx bx-heart"></i>
+          </button>
+          <img src="./images/share/gift4.png" alt="Xmas Tree" />
+          <h3>$48</h3>
+          <p class="text-sm">Xmas Tree</p>
+        </div>
+        <div class="share_grid--item">
+          <button>
+            <i class="bx bx-heart"></i>
+          </button>
+          <img src="./images/share/gift5.png" alt="Snowman" />
+          <h3>$35</h3>
+          <p class="text-sm">Snowman</p>
+        </div>
+      </div>
+    </div>
+    <!-- NEW GIFTS SECTION -->
+    <div class="container gifts">
+      <h2 data-aos="fade-up" data-aos-offset="200">New Gifts</h2>
+      <div class="gits_carousel owl-carousel">
+        <div
+          class="gits_carousel--item"
+          data-aos="zoom-in"
+          data-aos-offset="200"
+        >
+          <div class="disc"></div>
+          <button class="btn">
+            <i class="bx bx-heart"></i>
+          </button>
+          <img src="./images/gift1.png" alt="sledge" />
+          <h2>$95</h2>
+          <p>Sledge</p>
+        </div>
+        <div
+          class="gits_carousel--item"
+          data-aos="zoom-in"
+          data-aos-offset="200"
+        >
+          <div class="disc"></div>
+          <button class="btn">
+            <i class="bx bx-heart"></i>
+          </button>
+          <img src="./images/gift2.png" alt="snow globe" />
+          <h2>$95</h2>
+          <p>Snow Globe</p>
+        </div>
+        <div
+          class="gits_carousel--item"
+          data-aos="zoom-in"
+          data-aos-offset="200"
+        >
+          <div class="disc"></div>
+          <button class="btn">
+            <i class="bx bx-heart"></i>
+          </button>
+          <img src="./images/gift3.png" alt="xmas wreath" />
+          <h2>$95</h2>
+          <p>Xmas Wreath</p>
+        </div>
+        <div
+          class="gits_carousel--item"
+          data-aos="zoom-in"
+          data-aos-offset="200"
+        >
+          <div class="disc"></div>
+          <button class="btn">
+            <i class="bx bx-heart"></i>
+          </button>
+          <img src="./images/gift4.png" alt="reindeer" />
+          <h2>$95</h2>
+          <p>Reindeer</p>
+        </div>
+      </div>
     </div>
     <!-- MENU OVERLAY -->
     <div class="overlay">
@@ -85,6 +238,15 @@
       </button>
       <img class="overlay_corner" src="./images/menu-corner.png" alt="" />
     </div>
+
+    <!-- SCRIPTS -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
