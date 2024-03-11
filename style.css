@@ -279,6 +279,8 @@ h3 {
 }
 .share_grid--item img {
   margin-bottom: 12px;
+  width: 100%;
+  max-width: 120px;
 }
 .share_grid--item p {
   font-weight: 500;
